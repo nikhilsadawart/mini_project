@@ -10,6 +10,83 @@
 
 <body>
 
+    <form action="{{ url_for('predict')}}" method="post">
+        <section class="heading">
+            <h2>Predictive analysis</h2>
+        </section>
+        
+        <section class="container">
+            <div class="content-1">
+                <div id="item1">
+                    <h3>Year</h3>
+                    <input id="first" name="Year" type="number ">
+                </div>
+                
+                <div id="item2">
+                    
+                    <h3> Showroom Price?(In lakhs)</h3>
+                    <input id="second" name="Present_Price" required="required">
+                </div>
+            </div>
+            
+            <div class="content-2">
+                
+                <div id="item3">
+                    <h3>Km Drived?</h3>
+                    <input id="third" name="Kms_Driven" required="required">
+                </div>
+                
+                <div id="item4">
+                    <h3>How much owners previously had the car(0 or 1 or 3) ?</h3><br><input id="fourth" name="Owner" required="required">
+                    
+                </div>
+            </div>
+            
+            <div class="content-3">
+                
+                <div id="item5">
+                    <h3>Fuel type</h3>
+                    <select name="Fuel_Type_Petrol" id="fuel" required="required">
+                        <option value="select">--select--</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Diesel">CNG</option>
+                    </select>
+                </div>
+                
+                <div id="item6">
+                    <h3>Seller Type</h3>
+                    <select name="Seller_Type_Individual" id="resea" required="required">
+                        <option value="select">--select--</option>
+                        <option value="Dealer">Dealer</option>
+                        <option value="Individual">Individual</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="content-4">
+                
+                <div id="item7">
+                    <h3>Transmission type</h3>
+                    <select name="Transmission_Mannual" id="research" required="required">
+                        <option value="select">--select--</option>
+                        <option value="Mannual">Manual Car</option>
+                        <option value="Automatic">Automatic Car</option>
+                    </select>
+                </div>
+                
+                <div id="item8">
+                    <h3>Total Cost</h3>
+                    <button id="sub" type="submit ">Calculate the Selling Price</button>
+                    <br>
+                </div>
+            </div>
+        </section>
+    </form>
+    
+    <footer class="center-1">
+        copyright © www.Myonlinecarshop.com.All rights Reserved
+    </footer>
     <style>
         body {
             font-family: 'Baloo Bhai 2', cursive;
@@ -232,88 +309,6 @@
             
         }
     </style>
-    <form action="{{ url_for('predict')}}" method="post">
-        <section class="heading">
-            <h2>Predictive analysis</h2>
-        </section>
-
-        <section class="container">
-            <div class="content-1">
-                <div id="item1">
-                    <h3>Year</h3>
-                    <input id="first" name="Year" type="number ">
-                </div>
-
-                <div id="item2">
-
-                    <h3> Showroom Price?(In lakhs)</h3>
-                    <input id="second" name="Present_Price" required="required">
-                </div>
-            </div>
-
-            <div class="content-2">
-
-                <div id="item3">
-                    <h3>Km Drived?</h3>
-                    <input id="third" name="Kms_Driven" required="required">
-                </div>
-
-                <div id="item4">
-                    <h3>Owners Type(0, 1, 2)</h3>
-                    <select name="owner" id="fourth" required="required">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-
-                </div>
-            </div>
-
-            <div class="content-3">
-
-                <div id="item5">
-                    <h3>Fuel type</h3>
-                    <select name="Fuel_Type_Petrol" id="fuel" required="required">
-                        <option value="select">--select--</option>
-                        <option value="Petrol">Petrol</option>
-                        <option value="Diesel">Diesel</option>
-                        <option value="Diesel">CNG</option>
-                    </select>
-                </div>
-
-                <div id="item6">
-                    <h3>Seller Type</h3>
-                    <select name="Seller_Type_Individual" id="resea" required="required">
-                        <option value="select">--select--</option>
-                        <option value="Dealer">Dealer</option>
-                        <option value="Individual">Individual</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="content-4">
-
-                <div id="item7">
-                    <h3>Transmission type</h3>
-                    <select name="Transmission_Mannual" id="research" required="required">
-                        <option value="select">--select--</option>
-                        <option value="Mannual">Manual Car</option>
-                        <option value="Automatic">Automatic Car</option>
-                    </select>
-                </div>
-
-                <div id="item8">
-                    <h3>Total Cost</h3>
-                    <button id="sub" type="submit ">Calculate the Selling Price</button>
-                    <br>
-                </div>
-            </div>
-        </section>
-    </form>
-
-    <footer class="center-1">
-        copyright © www.Myonlinecarshop.com.All rights Reserved
-    </footer>
 </body>
 
 </html>
