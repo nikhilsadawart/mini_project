@@ -25,10 +25,8 @@ def predict():
         Car_Name_ritz=request.form['Car-Name_ritz']
         if(Car_Name_ritz=='ritz'):
             Car_Name_ritz=1
-            Car_Name_ritz=0
         else:
             Car_Name_ritz=0
-            Car_Name_ritz=1 
         Fuel_Type_Petrol=request.form['Fuel_Type_Petrol']
         if(Fuel_Type_Petrol=='Petrol'):
                 Fuel_Type_Petrol=1
