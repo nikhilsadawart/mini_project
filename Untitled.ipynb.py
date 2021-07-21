@@ -15,7 +15,7 @@ print(df['Owner'].unique())
 print(df.isnull().sum())
 print(df.describe())
 
-final_dataset=df[['Year','Selling_Price','Present_Price','Kms_Driven','Fuel_Type','Seller_Type','Transmission','Owner']]
+final_dataset=df[['Car_Name','Year','Selling_Price','Present_Price','Kms_Driven','Fuel_Type','Seller_Type','Transmission','Owner']]
 print(final_dataset.head())
 
 
