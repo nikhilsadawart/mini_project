@@ -22,7 +22,7 @@ def predict():
         Kms_Driven=int(request.form['Kms_Driven'])
         Kms_Driven2=np.log(Kms_Driven)
         Owner=int(request.form['Owner'])
-        Car_Name_ritz=request.form['Car-Name_ritz']
+        Car_Name_ritz=request.form['Car_Name_ritz']
         if(Car_Name_ritz=='ritz'):
             Car_Name_ritz=1
         else:
